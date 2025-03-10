@@ -1,0 +1,242 @@
+.datatable--cursor {
+    /*
+    background: $secondary;
+    color: $boost;
+    */
+}
+
+.datatable--hover {
+    /*
+    background: $primary;
+    color: $foreground;
+    */
+}
+
+Screen {
+    layout: vertical;
+    overflow-y: auto;
+    
+}
+
+/*
+Widget {
+    background: $background;
+    color: $primary;
+}
+*/
+
+Header {
+    dock: top;
+}
+
+Footer {
+    dock: bottom;
+}
+
+
+StockTradeTicket {
+    height: 1fr;
+    layout: vertical;
+}
+
+OptionTradeTicket {
+    height: 1fr;
+    layout: vertical    
+}
+
+CashTransactionTicket {
+    height: 1fr;
+    layout: vertical        
+}
+
+
+
+CustomHeaderWidget {
+    dock: top;   
+
+    height: 2;
+
+    layout: horizontal;
+    overflow-x: hidden;
+}
+
+DashboardScreen {
+    align: center middle;
+}
+
+TotalIntradayPnLWidget {
+    layout: horizontal;
+    height: 9%;
+}
+
+#dashboard {
+    height:93%
+}
+
+RealTimeViewerWidget {
+    layout: horizontal;
+}
+
+RiskScreen {
+    layout: horizontal;
+}
+
+#intraday_pnl_chart {
+    height: 90%;
+}
+
+
+SplashScreen {
+    align: center middle;
+}
+
+
+DbViewerWidget {
+    width: 1fr;
+    height: 1fr;
+    layout: horizontal;
+}
+
+
+
+
+
+#trading_ticket_info_label {
+    height: 2;
+}
+
+#splashy_container {
+    opacity: 100%;
+    height: 1fr;
+    align: center middle;
+}
+
+#splashy_sparkline {
+    background: black;
+    width: 10%;
+}
+
+.splashy_textline {
+    text-align: center;
+    background: black;
+    width: 4%;
+}
+
+.logo_header_label {
+    align: center middle;
+    text-align: left;
+    width: 1fr;
+}
+
+
+.version_header_label {
+    align: center middle;
+    text-align: center;
+    width: 1fr;
+}
+
+.time_header_label {
+    align: center middle;
+    text-align: right;
+    width: 1fr;
+    height: 90%;
+}
+
+
+.box1 {
+    height: 100%;
+    width: 0.2fr;
+    margin: 0 0;
+}
+
+
+.box2 {
+    height: 100%;
+    width: 0.8fr;
+    margin: 0 0;
+}
+
+.right_dock {
+    height: 100%;
+    width: 1.0fr;
+    margin: 0 0;    
+}
+
+.rt_dashboard_tree_widget {
+    height: 100%;
+    width: 0.12fr;
+    margin: 0 0;
+}
+
+
+DbViewerWidget {
+    width: auto;
+    height: auto;
+    layout: horizontal;
+}
+
+DuckDbTree {
+    width: 32;
+    height: 1fr;
+    border: solid #666;
+}
+
+#table-container {
+    height: 1fr;  /* Let the table take available space but not push the controls off-screen */
+    overflow: auto;
+}
+
+#db_widget_controls {
+    height: auto;
+}
+
+ReportsWidget {
+    layout: horizontal;
+    width: 1fr;
+    height: 1fr;
+}
+
+
+.reports_box1 {
+    height: 100%;
+    width: 0.25fr;
+    margin: 0 0;
+}
+
+
+.reports_box2 {
+    height: 100%;
+    width: 0.75fr;
+    margin: 0 0;
+}
+
+
+.pnl_report {
+    height: auto;
+}
+
+
+
+
+
+
+
+QueryScreen {
+    layout: vertical
+}
+
+#query_input {
+    width: auto;
+}
+
+#sql_textarea {
+    height: 1fr;
+}
+
+#query_table {
+    height: 1fr;
+}
+
+#query_prompt {
+    height: auto;
+}

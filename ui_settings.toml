@@ -1,0 +1,281 @@
+
+[reports]
+
+
+[reports.pnl]
+
+[reports.pnl.columns]
+
+[reports.pnl.columns.cob_date]
+name="Date"
+type="date"
+
+
+[reports.pnl.columns.display_ticker]
+name="Ticker"
+type="string"
+
+[reports.pnl.columns.exch_code]
+name="Exch"
+type="string"
+
+[reports.pnl.columns.security_name]
+name="Name"
+type="string"
+
+[reports.pnl.columns.quantity]
+name="Qty"
+type="int"
+
+[reports.pnl.columns.avg_cost]
+name="Cost"
+type="quote $+"                          # currency >= 0.00
+style="#cccccc"
+
+[reports.pnl.columns.price]
+name="Trade Price"
+type="quote $+"                          # currency >= 0.00
+style="#cccccc"
+
+
+[reports.pnl.columns.close_price]
+name="[cyan] Close"
+type="quote $"
+
+[reports.pnl.columns.prev_close_price]
+name="[cyan] Prev Close"
+type="quote $"
+
+
+[reports.pnl.columns.fx_rate_cob]
+name="[green] FX"
+type="price $"
+
+
+[reports.pnl.columns.intraday_pnl_local_ccy]
+name="[cyan] Intraday P&L"
+type="quote $"
+style=["deep_pink1", "#cccccc"]
+
+
+[reports.pnl.columns.dividend_amount_local_ccy]
+name="[cyan] Divs"
+type="quote $"
+
+
+[reports.pnl.columns.unrealized_pnl_portfolio_ccy_local]
+name="MTM P&L"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+[reports.pnl.columns.dividends_portfolio_ccy_exdiv]
+name="Divs P&L"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+[reports.pnl.columns.unrealized_fx_pnl]
+name="FX P&L"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+
+[reports.pnl.columns.delta_total_pnl_local]
+name="[cyan] Daily P&L (local)"
+type="quote $"
+style=["deep_pink1", "#cccccc"]
+
+[reports.pnl.columns.delta_unrealized_fx_pnl]
+name="FX P&L chg"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+[reports.pnl.columns.delta_total_pnl_portfolio_ccy]
+name="P&L chg"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+
+[reports.pnl.columns.total_dod_pnl_portfolio_ccy]
+name="Daily P&L"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+
+[reports.pnl.columns.total_pnl_portfolio_ccy]
+name="Total P&L"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+
+[reports.pnl.columns.dod_pnl_pct_aum]
+name="P&L %AUM"
+type="%"
+style=["deep_pink1", "#cccccc"]
+
+
+[reports.pnl.columns.sector_name]
+name="Sector"
+type="string"
+
+
+[reports.pnl.columns.security_ccy]
+name="ccy"
+type="string"
+
+
+
+[reports.pnl.columns.mkt_value_portfolio_ccy]
+name="[cyan] Mkt Value"
+type="portfolio $"
+
+[reports.pnl.columns.pct_aum]
+name="% AUM"
+type="%"                                # percentage
+style=["deep_pink2", "white"]
+
+
+[reports.pnl.columns.security_type_2]
+name="Type"
+type="string"
+
+[reports.pnl.columns.Long]
+name="[cyan] Long"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+[reports.pnl.columns.Short]
+name="[cyan] Short"
+type="portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+#[reports.pnl.columns.USD]
+#name="[cyan] USD"
+#type="portfolio $"
+#style=["deep_pink1", "#cccccc"]
+
+#[reports.pnl.columns.CAD]
+#name="[cyan] CAD"
+#type="portfolio $"
+#style=["deep_pink1", "#cccccc"]
+
+#[reports.pnl.columns.EUR]
+#name="[cyan] EUR"
+#type="portfolio $"
+#style=["deep_pink1", "#cccccc"]
+
+
+[reports.pnl.columns.cash_balance_portfolio_ccy]
+name = "[cyan] Cash Balance"
+type = "portfolio $"
+style=["deep_pink1", "#cccccc"]
+
+[reports.pnl.columns.ex_dividend_date]
+name="Ex-Date"
+type="date"
+
+[reports.pnl.columns.cash_amount]
+name="[cyan] Cash Amt"
+type="quote $"
+
+[reports.pnl.columns.split_date]
+name="Split Date"
+type="date"
+
+[reports.pnl.columns.split_from]
+name="Split From"
+type="int"
+
+[reports.pnl.columns.split_to]
+name="Split To"
+type="int"
+
+
+
+[dashboard]
+
+[dashboard.columns]
+
+#[dashboard.columns.row_num]
+#name="⋈"
+#type="int+"                            # counting number {1,2,...}
+#style="#cccccc"
+
+[dashboard.columns.portfolio_name]
+#name="Π"
+name="Acnt"
+type="string"
+style="#cccccc"
+
+[dashboard.columns.ticker]
+name="Ticker"
+type="string"
+style="italic cyan"
+
+[dashboard.columns.name]
+name="Name"
+type="string"
+
+[dashboard.columns.expiration_date]
+name="Expiry"
+type="date"
+enable = ["options_node"]
+
+[dashboard.columns.ccy]
+name="Crncy"
+type="string"
+
+[dashboard.columns.quantity]
+name="Qty"
+type="int"                           # integer {...,-2,-1,0,+1,+2,...}
+style=["deep_pink1", "#cccccc"]    # color < 0, color >= 0
+
+[dashboard.columns.avg_cost]
+name="Cost"
+type="quote $+"                          # currency >= 0.00
+style="#cccccc"
+
+
+[dashboard.columns.close_price]
+name="Close Price"
+type="quote $+"
+style="#cccccc"
+
+[dashboard.columns.price]
+name="Last"
+type="quote $+"
+style="#cccccc"
+
+[dashboard.columns.bid]
+name="Bid"
+type="quote $+"
+style="#cccccc"
+
+[dashboard.columns.ask]
+name="Ask"
+type="quote $+"
+style="#cccccc"
+
+[dashboard.columns.mkt_value]
+name="Mkt Value"
+type="quote $"                           # currency < 0.00 or >= 0.00
+style=["deep_pink1", "#cccccc"]
+
+[dashboard.columns.pct_aum]
+name="% AUM"
+type="%"                                # percentage
+style=["deep_pink2", "white"]
+
+[dashboard.columns.gain_loss]
+name="MTM P&L"
+type="quote $"
+style=["deep_pink1", "#cccccc"]
+
+[dashboard.columns.pct_chg]
+name="% Chg"
+type="%"                                # percentage
+style=["deep_pink2", "white"]
+
+[dashboard.columns.pnl]
+name="P&L"
+type="quote $"                           # percentage
+style=["deep_pink2", "white"]

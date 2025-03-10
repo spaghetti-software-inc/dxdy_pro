@@ -1,0 +1,25 @@
+[database]
+file = "/Users/av/repos/dxdy/data/dxdy.duckdb"
+backup_directory = "/Users/av/repos/dxdy/data/backups/"
+
+[intraday_pnl]
+directory = "/Users/av/repos/dxdy/data/intraday_pnl"
+
+[log]
+file = "/Users/av/repos/dxdy/data/dxdy_log.duckdb"
+
+[ntp]
+#server = "time.aws.com"
+server = "ca.pool.ntp.org"
+
+# https://pandas-market-calendars.readthedocs.io/en/stable/calendars.html
+[calendar]
+trading_exchanges = [
+    "NYSE",
+    "CBOE_Equity_Options",
+    "TSX"
+]
+
+[microservices]
+realtime_calculation_tcp_socket = "tcp://127.0.0.1:7000"
+

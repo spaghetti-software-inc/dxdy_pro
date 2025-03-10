@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dxdy"
+version = "1.0.0"
+description = "hedge fund software"
+requires-python = ">=3.6"
+license = {text = "Proprietary"}
+authors = [
+  { email = "info@softwarespaghetti.com" }
+]
+urls = { "Homepage" = "https://github.com/spaghetti-software-inc/dxdy" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: Other/Proprietary License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "beautifulsoup4",
+  "tomlkit",
+  "duckdb",
+  "ntplib",
+  "pandas",
+  #"numba",
+  "matplotlib",
+  "scipy",
+  "pyarrow",
+  "fastparquet",
+  "openai",
+  "pydantic",
+  "tabulate",
+  "rich",
+  "textual",
+  "loguru",
+  "pyzmq",
+  "html5lib",
+  "pyquery",
+  "plotext",
+  "textual-plotext",
+  "tiktoken",
+  "blp",
+  "pandas-market-calendars",
+  "keyring",
+  "yfinance",
+  "QuantLib",
+  "edgartools",
+  "fredapi"
+
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

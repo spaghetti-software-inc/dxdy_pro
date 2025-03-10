@@ -1,0 +1,5 @@
+[app.DxDy]
+command = "python app.py"
+
+[account]
+api_key = "4ED669QYE7GP"
